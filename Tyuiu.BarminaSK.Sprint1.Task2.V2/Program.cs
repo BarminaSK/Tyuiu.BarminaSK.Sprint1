@@ -1,8 +1,7 @@
-﻿using System.Runtime.InteropServices;
-using Tyuiu.BarminaSK.Sprint1.Task0.V4.Lib;
+﻿using Tyuiu.BarminaSK.Sprint1.Task2.V2.Lib;
 
-namespace Tyuiu.BarminaSK.Sprint1.Task0.V4
-{ 
+namespace Tyuiu.BarminaSK.Sprint1.Task2.V2
+{
     class Program
     {
         static void Main(string[] args)
@@ -12,25 +11,30 @@ namespace Tyuiu.BarminaSK.Sprint1.Task0.V4
             Console.Title = "Спринт #1 | Выполнила: Бармина С.К. | ПИНб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Базовые наывки работы в C#                                        *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #4                                                              *");
+            Console.WriteLine("* Тема: Арифметические операторы в C#                                     *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #2                                                              *");
             Console.WriteLine("* Выполнила: Бармина София Константиновна | ПИНб-25-1                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет выражение 4/2*5/(3+2)*(5-2)       *");
-            Console.WriteLine("* и печатает результат на экране                                          *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
+            Console.WriteLine("* выполняет указанные расчёты и печатает результат на экране.             *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* 4 / 2 * 5 / (3 + 2) * (5 - 2)                                            *");
+
+            int x;
+            Console.WriteLine("Введите значение х:");
+            x = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(ds.Calculate());
+
+            Console.WriteLine("Перевод из градусы в радианы числа х = " + ds.ConvertAngleToRad(x));
+
             Console.ReadLine();
         }
     }
 }
-
